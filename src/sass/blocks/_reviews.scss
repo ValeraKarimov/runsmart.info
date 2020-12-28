@@ -1,0 +1,46 @@
+.reviews {
+   padding-bottom: 71px;
+   &-user {
+      padding: 53px 5px 48px 5px;
+      display: flex;
+      &__img {
+         width: 169px;
+         height: 169px;
+      }
+      &__name {
+         margin-left: 62px;
+         font-size: 18px;
+         font-weight: bold;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: normal;
+         text-align: left;
+         color: #0d0d0d;
+      }
+      &__range {
+         margin-left: 62px;
+         margin-top: 10px;
+         font-size: 14px;
+         font-weight: 300;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: normal;
+         text-align: left;
+         color: #646464;
+      }
+      &__descr {
+         margin-left: 62px;
+         margin-top: 19px;
+         font-size: 16px;
+         font-weight: 300;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: normal;
+         letter-spacing: normal;
+         text-align: left;
+         color: #0d0d0d;
+      }
+   }
+}
