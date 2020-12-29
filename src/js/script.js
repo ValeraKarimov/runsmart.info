@@ -71,4 +71,30 @@ const slider = tns({
       $('.overlay, #order').fadeIn('slow');
     });
   });
+  
+  function validateForm(form) {
+    $(form).validate({
+      rules: {
+        name: 'required',
+        phone: 'required',
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: 'Пожалуйста введите имя',
+        phone: 'Пожалуйста введите номер телефона',
+        email: {
+          required: 'нам нужна ваша почта чтоб связаться с вами',
+          email: 'ваша почта должна бьіть формата example@mail.com'
+        }
+      }
+    });
+  };
+
+  validateForm('#consultation-form');
+  validateForm('#consultation form');
+  validateForm('#order form');
+
 });
